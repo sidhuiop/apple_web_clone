@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to image Generater</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .prompt-box {
+            margin-top: 20px;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            margin-left: 44%;
+            justify-content: center;
+        }
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Text to Image Generater</h1>
+    </div>
+    <div class="content">
+        <h2>Welcome to our webpage!</h2>
+        <input type="text" id="name-input" class="prompt-box" placeholder="Enter the prompt...">
+        <div class="button-container">
+            <button onclick="greetUser()">Submit</button>
+            <button onclick="clearInput()">Clear</button>
+        </div>
+    </div>
+    <script>
+        function greetUser() {
+            var name = document.getElementById("name-input").value;
+            alert("Hello, " + name + "!");
+        }
+        function clearInput() {
+            document.getElementById("name-input").value = "";
+        }
+    </script>
+</body>
+</html>
